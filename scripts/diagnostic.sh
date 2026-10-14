@@ -24,9 +24,19 @@ if [ "${MEM:-0}" -ge 6000000000 ] 2>/dev/null; then ok "Mémoire allouée à Doc
 else ko "Mémoire Docker insuffisante ($((MEM/1024/1024/1024)) Go)" "Docker Desktop → Settings → Resources → 8 Go"; fi
 
 for p in 8888 9000 9001 5432 8080; do
-  if lsof -iTCP:$p -sTCP:LISTEN >/dev/null 2>&1 && ! docker ps --format '{{.Ports}}' | grep -q ":$p->"; then
-    ko "Port $p déjà utilisé par un autre programme" "Fermer ce programme (ex. un PostgreSQL local sur 5432)"
-  else ok "Port $p libre"; fi
+  if ! lsof -nP -iTCP:$p -sTCP:LISTEN >/dev/null 2>&1; then
+    ok "Port $p libre"
+  elif [ -n "$(docker ps -q --filter publish=$p --filter label=com.docker.compose.project=cours-dataviz 2>/dev/null)" ]; then
+    ok "Port $p utilisé par la stack du cours (déjà lancée)"
+  else
+    AUTRE=$(docker ps --filter publish=$p --format '{{.Names}}' 2>/dev/null | head -1)
+    if [ -n "$AUTRE" ]; then
+      ko "Port $p occupé par le conteneur « $AUTRE » d'un autre projet" "docker stop $AUTRE"
+    else
+      PROG=$(lsof -nP -iTCP:$p -sTCP:LISTEN 2>/dev/null | awk 'NR==2{print $1}')
+      ko "Port $p occupé par le programme « ${PROG:-inconnu} »" "Fermer ce programme, puis relancer le diagnostic"
+    fi
+  fi
 done
 
 ls data/raw/yellow_tripdata_*.parquet >/dev/null 2>&1 && ok "Données NYC Taxi présentes" \
