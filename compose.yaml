@@ -3,6 +3,7 @@
 # ============================================================================
 #  Base (S1–S6)         : docker compose up -d
 #  + SPARQL (S3)        : docker compose --profile semantique up -d
+#  + App Streamlit (S5) : docker compose --profile app up -d --build
 #  + BI (S7, S9, S10)   : docker compose --profile bi up -d
 #  + Temps réel (S8)    : docker compose --profile temps-reel up -d
 #  Tout                 : docker compose --profile bi --profile temps-reel up -d
@@ -101,6 +102,25 @@ services:
       ENABLE_UPDATE: "true"
     volumes:
       - fuseki-data:/fuseki-base/databases
+
+  # --- Application d'analyse (profil « app ») ---------------------------------
+  streamlit:
+    profiles: ["app"]
+    build: ./seances/S05-viz-code/app
+    container_name: streamlit
+    ports:
+      - "8501:8501"   # -> http://localhost:8501
+    environment:
+      PG_HOST: postgres
+      PG_DB: ${PG_DB:-nyctaxi}
+      PG_USER: ${PG_USER:-cours}
+      PG_PASSWORD: ${PG_PASSWORD:-cours}
+      ZONES_GEOJSON: /data/zones.geojson
+    volumes:
+      - ./seances/S05-viz-code/app:/app     # le code modifié est pris en compte au rechargement
+      - ./data:/data:ro
+    depends_on:
+      - postgres
 
   # --- BI décisionnelle (profil « bi ») --------------------------------------
   superset:
