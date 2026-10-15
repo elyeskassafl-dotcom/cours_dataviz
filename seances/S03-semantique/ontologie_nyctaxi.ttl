@@ -1,0 +1,82 @@
+@prefix nyc: <http://example.org/nyctaxi#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nyc:ZoneAeroport a owl:Class ;
+    rdfs:label "zone d'aéroport"@fr ;
+    rdfs:subClassOf nyc:Zone .
+
+nyc:aPourServiceZone a owl:ObjectProperty ;
+    rdfs:domain nyc:Zone ;
+    rdfs:range nyc:ZoneDeService .
+
+nyc:aPourTarification a owl:ObjectProperty ;
+    rdfs:domain nyc:Course ;
+    rdfs:range nyc:TypeTarification .
+
+nyc:appartientCategorie a owl:ObjectProperty ;
+    rdfs:domain nyc:ModeDePaiement ;
+    rdfs:range nyc:CategoriePaiement .
+
+nyc:arriveA a owl:ObjectProperty ;
+    rdfs:label "arrive à"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range nyc:Zone .
+
+nyc:departDe a owl:ObjectProperty ;
+    rdfs:label "part de"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range nyc:Zone .
+
+nyc:distanceMiles a owl:DatatypeProperty ;
+    rdfs:label "distance (miles)"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range xsd:decimal .
+
+nyc:idZone a owl:DatatypeProperty ;
+    rdfs:label "identifiant TLC de la zone"@fr ;
+    rdfs:domain nyc:Zone ;
+    rdfs:range xsd:integer .
+
+nyc:montantTotal a owl:DatatypeProperty ;
+    rdfs:label "montant total ($)"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range xsd:decimal .
+
+nyc:nom a owl:DatatypeProperty ;
+    rdfs:label "nom"@fr ;
+    rdfs:domain nyc:Zone ;
+    rdfs:range xsd:string .
+
+nyc:payeePar a owl:ObjectProperty ;
+    rdfs:label "est payée par"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range nyc:ModeDePaiement .
+
+nyc:situeeDans a owl:ObjectProperty ;
+    rdfs:label "est située dans"@fr ;
+    rdfs:domain nyc:Zone ;
+    rdfs:range nyc:Arrondissement .
+
+nyc:Arrondissement a owl:Class ;
+    rdfs:label "arrondissement"@fr .
+
+nyc:CategoriePaiement a owl:Class ;
+    rdfs:label "Catégorie de paiement"@fr .
+
+nyc:TypeTarification a owl:Class ;
+    rdfs:label "Type de tarification"@fr .
+
+nyc:ZoneDeService a owl:Class ;
+    rdfs:label "Zone de service"@fr .
+
+nyc:ModeDePaiement a owl:Class ;
+    rdfs:label "mode de paiement"@fr .
+
+nyc:Course a owl:Class ;
+    rdfs:label "course de taxi"@fr .
+
+nyc:Zone a owl:Class ;
+    rdfs:label "zone de taxi"@fr .
+

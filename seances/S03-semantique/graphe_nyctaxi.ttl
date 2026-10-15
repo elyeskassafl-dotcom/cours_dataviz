@@ -1,0 +1,3775 @@
+@prefix nyc: <http://example.org/nyctaxi#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nyc:Airports a nyc:ZoneDeService ;
+    rdfs:label "Airports" .
+
+nyc:Boro_Zone a nyc:ZoneDeService ;
+    rdfs:label "Boro Zone" .
+
+nyc:Yellow_Zone a nyc:ZoneDeService ;
+    rdfs:label "Yellow Zone" .
+
+nyc:aPourServiceZone a owl:ObjectProperty ;
+    rdfs:domain nyc:Zone ;
+    rdfs:range nyc:ZoneDeService .
+
+nyc:aPourTarification a owl:ObjectProperty ;
+    rdfs:domain nyc:Course ;
+    rdfs:range nyc:TypeTarification .
+
+nyc:appartientCategorie a owl:ObjectProperty ;
+    rdfs:domain nyc:ModeDePaiement ;
+    rdfs:range nyc:CategoriePaiement .
+
+nyc:arriveA a owl:ObjectProperty ;
+    rdfs:label "arrive à"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range nyc:Zone .
+
+nyc:course_0 a nyc:Course ;
+    nyc:arriveA nyc:zone_144 ;
+    nyc:departDe nyc:zone_262 ;
+    nyc:distanceMiles 6.3 ;
+    nyc:montantTotal 37.15 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_1 a nyc:Course ;
+    nyc:arriveA nyc:zone_100 ;
+    nyc:departDe nyc:zone_48 ;
+    nyc:distanceMiles 1.05 ;
+    nyc:montantTotal 12.25 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_10 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_170 ;
+    nyc:distanceMiles 2.2 ;
+    nyc:montantTotal 23.1 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_100 a nyc:Course ;
+    nyc:arriveA nyc:zone_170 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 17.04 ;
+    nyc:montantTotal 99.78 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_101 a nyc:Course ;
+    nyc:arriveA nyc:zone_263 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 0.42 ;
+    nyc:montantTotal 10.8 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_102 a nyc:Course ;
+    nyc:arriveA nyc:zone_231 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 0.96 ;
+    nyc:montantTotal 15.91 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_103 a nyc:Course ;
+    nyc:arriveA nyc:zone_143 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 0.65 ;
+    nyc:montantTotal 13.25 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_104 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 1.94 ;
+    nyc:montantTotal 19.05 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_105 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_238 ;
+    nyc:distanceMiles 1.53 ;
+    nyc:montantTotal 23.16 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_106 a nyc:Course ;
+    nyc:arriveA nyc:zone_48 ;
+    nyc:departDe nyc:zone_88 ;
+    nyc:distanceMiles 5.52 ;
+    nyc:montantTotal 35.45 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_107 a nyc:Course ;
+    nyc:arriveA nyc:zone_140 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 1.01 ;
+    nyc:montantTotal 14.75 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_108 a nyc:Course ;
+    nyc:arriveA nyc:zone_90 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 1.88 ;
+    nyc:montantTotal 28.26 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_109 a nyc:Course ;
+    nyc:arriveA nyc:zone_151 ;
+    nyc:departDe nyc:zone_141 ;
+    nyc:distanceMiles 3.44 ;
+    nyc:montantTotal 33.03 .
+
+nyc:course_11 a nyc:Course ;
+    nyc:arriveA nyc:zone_113 ;
+    nyc:departDe nyc:zone_70 ;
+    nyc:distanceMiles 9.79 ;
+    nyc:montantTotal 62.93 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_110 a nyc:Course ;
+    nyc:arriveA nyc:zone_79 ;
+    nyc:departDe nyc:zone_79 ;
+    nyc:distanceMiles 0.7 ;
+    nyc:montantTotal 19.0 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_111 a nyc:Course ;
+    nyc:arriveA nyc:zone_164 ;
+    nyc:departDe nyc:zone_79 ;
+    nyc:distanceMiles 1.93 ;
+    nyc:montantTotal 15.6 .
+
+nyc:course_113 a nyc:Course ;
+    nyc:arriveA nyc:zone_114 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 3.59 ;
+    nyc:montantTotal 27.65 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_114 a nyc:Course ;
+    nyc:arriveA nyc:zone_107 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 16.99 ;
+    nyc:montantTotal 85.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_115 a nyc:Course ;
+    nyc:arriveA nyc:zone_50 ;
+    nyc:departDe nyc:zone_158 ;
+    nyc:distanceMiles 1.87 ;
+    nyc:montantTotal 21.9 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_116 a nyc:Course ;
+    nyc:arriveA nyc:zone_163 ;
+    nyc:departDe nyc:zone_246 ;
+    nyc:distanceMiles 1.85 ;
+    nyc:montantTotal 23.58 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_117 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_49 ;
+    nyc:distanceMiles 4.12 ;
+    nyc:montantTotal 25.52 .
+
+nyc:course_118 a nyc:Course ;
+    nyc:arriveA nyc:zone_79 ;
+    nyc:departDe nyc:zone_170 ;
+    nyc:distanceMiles 1.25 ;
+    nyc:montantTotal 15.35 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_119 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 0.83 ;
+    nyc:montantTotal 16.15 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_12 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_158 ;
+    nyc:distanceMiles 0.82 ;
+    nyc:montantTotal 14.25 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_120 a nyc:Course ;
+    nyc:arriveA nyc:zone_153 ;
+    nyc:departDe nyc:zone_182 ;
+    nyc:distanceMiles 6.26 ;
+    nyc:montantTotal 20.31 .
+
+nyc:course_121 a nyc:Course ;
+    nyc:arriveA nyc:zone_116 ;
+    nyc:departDe nyc:zone_41 ;
+    nyc:distanceMiles 0.36 ;
+    nyc:montantTotal 11.79 .
+
+nyc:course_122 a nyc:Course ;
+    nyc:arriveA nyc:zone_132 ;
+    nyc:departDe nyc:zone_170 ;
+    nyc:distanceMiles 16.3 ;
+    nyc:montantTotal 85.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_123 a nyc:Course ;
+    nyc:arriveA nyc:zone_87 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 5.05 ;
+    nyc:montantTotal 31.05 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_124 a nyc:Course ;
+    nyc:arriveA nyc:zone_50 ;
+    nyc:departDe nyc:zone_233 ;
+    nyc:distanceMiles 1.73 ;
+    nyc:montantTotal 22.74 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_125 a nyc:Course ;
+    nyc:arriveA nyc:zone_258 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 7.3 ;
+    nyc:montantTotal 33.55 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_126 a nyc:Course ;
+    nyc:arriveA nyc:zone_24 ;
+    nyc:departDe nyc:zone_238 ;
+    nyc:distanceMiles 0.72 ;
+    nyc:montantTotal 15.38 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_127 a nyc:Course ;
+    nyc:arriveA nyc:zone_151 ;
+    nyc:departDe nyc:zone_238 ;
+    nyc:distanceMiles 0.78 ;
+    nyc:montantTotal 14.4 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_128 a nyc:Course ;
+    nyc:arriveA nyc:zone_231 ;
+    nyc:departDe nyc:zone_13 ;
+    nyc:distanceMiles 1.24 ;
+    nyc:montantTotal 15.79 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_129 a nyc:Course ;
+    nyc:arriveA nyc:zone_230 ;
+    nyc:departDe nyc:zone_68 ;
+    nyc:distanceMiles 1.47 ;
+    nyc:montantTotal 27.78 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_13 a nyc:Course ;
+    nyc:arriveA nyc:zone_141 ;
+    nyc:departDe nyc:zone_141 ;
+    nyc:distanceMiles 1.98 ;
+    nyc:montantTotal 22.2 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_130 a nyc:Course ;
+    nyc:arriveA nyc:zone_125 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 0.84 ;
+    nyc:montantTotal 12.2 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_131 a nyc:Course ;
+    nyc:arriveA nyc:zone_163 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 1.2 ;
+    nyc:montantTotal 18.54 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_132 a nyc:Course ;
+    nyc:arriveA nyc:zone_75 ;
+    nyc:departDe nyc:zone_151 ;
+    nyc:distanceMiles 1.58 ;
+    nyc:montantTotal 14.6 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_133 a nyc:Course ;
+    nyc:arriveA nyc:zone_231 ;
+    nyc:departDe nyc:zone_234 ;
+    nyc:distanceMiles 2.32 ;
+    nyc:montantTotal 24.78 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_134 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_79 ;
+    nyc:distanceMiles 5.92 ;
+    nyc:montantTotal 39.35 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_135 a nyc:Course ;
+    nyc:arriveA nyc:zone_143 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 0.36 ;
+    nyc:montantTotal 13.08 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_136 a nyc:Course ;
+    nyc:arriveA nyc:zone_262 ;
+    nyc:departDe nyc:zone_229 ;
+    nyc:distanceMiles 1.81 ;
+    nyc:montantTotal 21.9 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_137 a nyc:Course ;
+    nyc:arriveA nyc:zone_186 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 1.45 ;
+    nyc:montantTotal 24.06 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_138 a nyc:Course ;
+    nyc:arriveA nyc:zone_95 ;
+    nyc:departDe nyc:zone_138 ;
+    nyc:distanceMiles 5.98 ;
+    nyc:montantTotal 41.58 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_139 a nyc:Course ;
+    nyc:arriveA nyc:zone_200 ;
+    nyc:departDe nyc:zone_74 ;
+    nyc:distanceMiles 8.6 ;
+    nyc:montantTotal 36.0 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_14 a nyc:Course ;
+    nyc:arriveA nyc:zone_132 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 17.35 ;
+    nyc:montantTotal 81.69 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_140 a nyc:Course ;
+    nyc:arriveA nyc:zone_138 ;
+    nyc:departDe nyc:zone_90 ;
+    nyc:distanceMiles 10.49 ;
+    nyc:montantTotal 73.19 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_141 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_151 ;
+    nyc:distanceMiles 1.18 ;
+    nyc:montantTotal 21.14 .
+
+nyc:course_142 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_163 ;
+    nyc:distanceMiles 1.71 ;
+    nyc:montantTotal 18.9 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_143 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 2.44 ;
+    nyc:montantTotal 23.85 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_144 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_75 ;
+    nyc:distanceMiles 2.9 ;
+    nyc:montantTotal 25.62 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_145 a nyc:Course ;
+    nyc:arriveA nyc:zone_43 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 0.69 ;
+    nyc:montantTotal 15.45 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_146 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 1.05 ;
+    nyc:montantTotal 16.8 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_147 a nyc:Course ;
+    nyc:arriveA nyc:zone_143 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 2.18 ;
+    nyc:montantTotal 3.6 .
+
+nyc:course_148 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_113 ;
+    nyc:distanceMiles 2.53 ;
+    nyc:montantTotal 23.1 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_149 a nyc:Course ;
+    nyc:arriveA nyc:zone_141 ;
+    nyc:departDe nyc:zone_263 ;
+    nyc:distanceMiles 0.5 ;
+    nyc:montantTotal 10.05 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_15 a nyc:Course ;
+    nyc:arriveA nyc:zone_48 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 17.5 ;
+    nyc:montantTotal 88.44 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_150 a nyc:Course ;
+    nyc:arriveA nyc:zone_170 ;
+    nyc:departDe nyc:zone_233 ;
+    nyc:distanceMiles 0.7 ;
+    nyc:montantTotal 16.3 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_151 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 1.19 ;
+    nyc:montantTotal 16.86 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_152 a nyc:Course ;
+    nyc:arriveA nyc:zone_48 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 3.32 ;
+    nyc:montantTotal 28.98 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_153 a nyc:Course ;
+    nyc:arriveA nyc:zone_157 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 11.24 ;
+    nyc:montantTotal 49.25 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_154 a nyc:Course ;
+    nyc:arriveA nyc:zone_209 ;
+    nyc:departDe nyc:zone_43 ;
+    nyc:distanceMiles 7.34 ;
+    nyc:montantTotal 47.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_155 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 0.66 ;
+    nyc:montantTotal 14.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_156 a nyc:Course ;
+    nyc:arriveA nyc:zone_168 ;
+    nyc:departDe nyc:zone_138 ;
+    nyc:distanceMiles 7.2 ;
+    nyc:montantTotal 56.74 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_157 a nyc:Course ;
+    nyc:arriveA nyc:zone_79 ;
+    nyc:departDe nyc:zone_148 ;
+    nyc:distanceMiles 0.96 ;
+    nyc:montantTotal 16.38 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_158 a nyc:Course ;
+    nyc:arriveA nyc:zone_230 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 18.07 ;
+    nyc:montantTotal 89.5 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_159 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_140 ;
+    nyc:distanceMiles 0.9 ;
+    nyc:montantTotal 13.42 .
+
+nyc:course_16 a nyc:Course ;
+    nyc:arriveA nyc:zone_90 ;
+    nyc:departDe nyc:zone_79 ;
+    nyc:distanceMiles 1.41 ;
+    nyc:montantTotal 19.45 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_160 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_263 ;
+    nyc:distanceMiles 0.76 ;
+    nyc:montantTotal 12.6 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_161 a nyc:Course ;
+    nyc:arriveA nyc:zone_177 ;
+    nyc:departDe nyc:zone_231 ;
+    nyc:distanceMiles 7.22 ;
+    nyc:montantTotal 38.24 .
+
+nyc:course_162 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_229 ;
+    nyc:distanceMiles 1.9 ;
+    nyc:montantTotal 22.74 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_163 a nyc:Course ;
+    nyc:arriveA nyc:zone_233 ;
+    nyc:departDe nyc:zone_163 ;
+    nyc:distanceMiles 0.94 ;
+    nyc:montantTotal 16.32 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_164 a nyc:Course ;
+    nyc:arriveA nyc:zone_87 ;
+    nyc:departDe nyc:zone_211 ;
+    nyc:distanceMiles 1.98 ;
+    nyc:montantTotal 21.45 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_165 a nyc:Course ;
+    nyc:arriveA nyc:zone_107 ;
+    nyc:departDe nyc:zone_141 ;
+    nyc:distanceMiles 2.73 ;
+    nyc:montantTotal 24.78 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_166 a nyc:Course ;
+    nyc:arriveA nyc:zone_90 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 0.6 ;
+    nyc:montantTotal 14.7 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_167 a nyc:Course ;
+    nyc:arriveA nyc:zone_68 ;
+    nyc:departDe nyc:zone_68 ;
+    nyc:distanceMiles 1.15 ;
+    nyc:montantTotal 14.75 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_168 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_75 ;
+    nyc:distanceMiles 3.48 ;
+    nyc:montantTotal 32.62 .
+
+nyc:course_169 a nyc:Course ;
+    nyc:arriveA nyc:zone_71 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 10.86 ;
+    nyc:montantTotal 57.9 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_17 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_163 ;
+    nyc:distanceMiles 1.21 ;
+    nyc:montantTotal 21.06 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_170 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_140 ;
+    nyc:distanceMiles 0.8 ;
+    nyc:montantTotal 16.45 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_171 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 0.68 ;
+    nyc:montantTotal 25.26 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_172 a nyc:Course ;
+    nyc:arriveA nyc:zone_234 ;
+    nyc:departDe nyc:zone_141 ;
+    nyc:distanceMiles 3.58 ;
+    nyc:montantTotal 31.98 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_173 a nyc:Course ;
+    nyc:arriveA nyc:zone_7 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 3.5 ;
+    nyc:montantTotal 28.55 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_174 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 2.16 ;
+    nyc:montantTotal 20.99 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_175 a nyc:Course ;
+    nyc:arriveA nyc:zone_140 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 1.49 ;
+    nyc:montantTotal 2.92 .
+
+nyc:course_176 a nyc:Course ;
+    nyc:arriveA nyc:zone_186 ;
+    nyc:departDe nyc:zone_137 ;
+    nyc:distanceMiles 1.1 ;
+    nyc:montantTotal 33.25 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_177 a nyc:Course ;
+    nyc:arriveA nyc:zone_75 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 2.1 ;
+    nyc:montantTotal 18.86 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_178 a nyc:Course ;
+    nyc:arriveA nyc:zone_48 ;
+    nyc:departDe nyc:zone_246 ;
+    nyc:distanceMiles 2.23 ;
+    nyc:montantTotal 22.55 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_179 a nyc:Course ;
+    nyc:arriveA nyc:zone_163 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 1.04 ;
+    nyc:montantTotal 14.35 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_18 a nyc:Course ;
+    nyc:arriveA nyc:zone_132 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 16.63 ;
+    nyc:montantTotal 80.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_180 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 2.85 ;
+    nyc:montantTotal 26.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_181 a nyc:Course ;
+    nyc:arriveA nyc:zone_158 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 1.96 ;
+    nyc:montantTotal 23.19 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_182 a nyc:Course ;
+    nyc:arriveA nyc:zone_107 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 1.15 ;
+    nyc:montantTotal 16.35 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_183 a nyc:Course ;
+    nyc:arriveA nyc:zone_258 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 7.15 ;
+    nyc:montantTotal 39.55 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_184 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_151 ;
+    nyc:distanceMiles 1.81 ;
+    nyc:montantTotal 17.4 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_185 a nyc:Course ;
+    nyc:arriveA nyc:zone_90 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 18.3 ;
+    nyc:montantTotal 88.44 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_186 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_238 ;
+    nyc:distanceMiles 1.76 ;
+    nyc:montantTotal 18.37 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_187 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_238 ;
+    nyc:distanceMiles 1.62 ;
+    nyc:montantTotal 15.7 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_188 a nyc:Course ;
+    nyc:arriveA nyc:zone_166 ;
+    nyc:departDe nyc:zone_74 ;
+    nyc:distanceMiles 1.4 ;
+    nyc:montantTotal 13.5 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_189 a nyc:Course ;
+    nyc:arriveA nyc:zone_256 ;
+    nyc:departDe nyc:zone_80 ;
+    nyc:distanceMiles 1.41 ;
+    nyc:montantTotal 15.0 .
+
+nyc:course_19 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_234 ;
+    nyc:distanceMiles 6.79 ;
+    nyc:montantTotal 47.4 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_190 a nyc:Course ;
+    nyc:arriveA nyc:zone_107 ;
+    nyc:departDe nyc:zone_158 ;
+    nyc:distanceMiles 1.66 ;
+    nyc:montantTotal 26.35 .
+
+nyc:course_191 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_164 ;
+    nyc:distanceMiles 1.1 ;
+    nyc:montantTotal 16.7 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_192 a nyc:Course ;
+    nyc:arriveA nyc:zone_137 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 1.47 ;
+    nyc:montantTotal 19.55 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_193 a nyc:Course ;
+    nyc:arriveA nyc:zone_140 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 2.23 ;
+    nyc:montantTotal 19.65 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_194 a nyc:Course ;
+    nyc:arriveA nyc:zone_170 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 0.73 ;
+    nyc:montantTotal 18.18 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_195 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_261 ;
+    nyc:distanceMiles 1.92 ;
+    nyc:montantTotal 20.16 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_196 a nyc:Course ;
+    nyc:arriveA nyc:zone_263 ;
+    nyc:departDe nyc:zone_74 ;
+    nyc:distanceMiles 1.15 ;
+    nyc:montantTotal 15.1 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_197 a nyc:Course ;
+    nyc:arriveA nyc:zone_234 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 1.01 ;
+    nyc:montantTotal 18.9 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_198 a nyc:Course ;
+    nyc:arriveA nyc:zone_166 ;
+    nyc:departDe nyc:zone_213 ;
+    nyc:distanceMiles 5.6 ;
+    nyc:montantTotal 33.44 .
+
+nyc:course_199 a nyc:Course ;
+    nyc:arriveA nyc:zone_230 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 0.83 ;
+    nyc:montantTotal 19.8 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_2 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 1.7 ;
+    nyc:montantTotal 19.3 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_20 a nyc:Course ;
+    nyc:arriveA nyc:zone_144 ;
+    nyc:departDe nyc:zone_144 ;
+    nyc:distanceMiles 0.02 ;
+    nyc:montantTotal 25.0 ;
+    nyc:payeePar nyc:paiement_4 .
+
+nyc:course_200 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_148 ;
+    nyc:distanceMiles 3.03 ;
+    nyc:montantTotal 27.78 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_201 a nyc:Course ;
+    nyc:arriveA nyc:zone_75 ;
+    nyc:departDe nyc:zone_79 ;
+    nyc:distanceMiles 5.06 ;
+    nyc:montantTotal 4.4 .
+
+nyc:course_202 a nyc:Course ;
+    nyc:arriveA nyc:zone_4 ;
+    nyc:departDe nyc:zone_90 ;
+    nyc:distanceMiles 2.08 ;
+    nyc:montantTotal 24.42 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_203 a nyc:Course ;
+    nyc:arriveA nyc:zone_230 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 0.89 ;
+    nyc:montantTotal 23.22 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_204 a nyc:Course ;
+    nyc:arriveA nyc:zone_42 ;
+    nyc:departDe nyc:zone_48 ;
+    nyc:distanceMiles 4.45 ;
+    nyc:montantTotal 31.55 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_205 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 2.41 ;
+    nyc:montantTotal 27.05 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_206 a nyc:Course ;
+    nyc:arriveA nyc:zone_140 ;
+    nyc:departDe nyc:zone_79 ;
+    nyc:distanceMiles 3.08 ;
+    nyc:montantTotal 25.55 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_207 a nyc:Course ;
+    nyc:arriveA nyc:zone_234 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 1.34 ;
+    nyc:montantTotal 20.22 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_208 a nyc:Course ;
+    nyc:arriveA nyc:zone_140 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 1.49 ;
+    nyc:montantTotal 20.35 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_209 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 1.23 ;
+    nyc:montantTotal 19.69 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_21 a nyc:Course ;
+    nyc:arriveA nyc:zone_234 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 0.7 ;
+    nyc:montantTotal 11.85 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_210 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_262 ;
+    nyc:distanceMiles 2.0 ;
+    nyc:montantTotal 18.0 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_211 a nyc:Course ;
+    nyc:arriveA nyc:zone_114 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 0.73 ;
+    nyc:montantTotal 14.34 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_212 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_152 ;
+    nyc:distanceMiles 4.16 ;
+    nyc:montantTotal 33.6 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_213 a nyc:Course ;
+    nyc:arriveA nyc:zone_79 ;
+    nyc:departDe nyc:zone_246 ;
+    nyc:distanceMiles 2.18 ;
+    nyc:montantTotal 22.89 .
+
+nyc:course_214 a nyc:Course ;
+    nyc:arriveA nyc:zone_170 ;
+    nyc:departDe nyc:zone_144 ;
+    nyc:distanceMiles 2.3 ;
+    nyc:montantTotal 21.4 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_215 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 1.65 ;
+    nyc:montantTotal 24.42 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_216 a nyc:Course ;
+    nyc:arriveA nyc:zone_100 ;
+    nyc:departDe nyc:zone_234 ;
+    nyc:distanceMiles 0.7 ;
+    nyc:montantTotal 12.55 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_217 a nyc:Course ;
+    nyc:arriveA nyc:zone_232 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 4.08 ;
+    nyc:montantTotal 31.14 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_218 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 0.5 ;
+    nyc:montantTotal 13.1 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_219 a nyc:Course ;
+    nyc:arriveA nyc:zone_137 ;
+    nyc:departDe nyc:zone_140 ;
+    nyc:distanceMiles 3.1 ;
+    nyc:montantTotal 18.2 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_22 a nyc:Course ;
+    nyc:arriveA nyc:zone_246 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 0.7 ;
+    nyc:montantTotal 13.5 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_220 a nyc:Course ;
+    nyc:arriveA nyc:zone_262 ;
+    nyc:departDe nyc:zone_107 ;
+    nyc:distanceMiles 4.31 ;
+    nyc:montantTotal 28.56 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_221 a nyc:Course ;
+    nyc:arriveA nyc:zone_33 ;
+    nyc:departDe nyc:zone_87 ;
+    nyc:distanceMiles 2.55 ;
+    nyc:montantTotal 24.78 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_222 a nyc:Course ;
+    nyc:arriveA nyc:zone_140 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 2.6 ;
+    nyc:montantTotal 22.2 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_223 a nyc:Course ;
+    nyc:arriveA nyc:zone_223 ;
+    nyc:departDe nyc:zone_68 ;
+    nyc:distanceMiles 6.3 ;
+    nyc:montantTotal 39.75 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_224 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_43 ;
+    nyc:distanceMiles 1.6 ;
+    nyc:montantTotal 19.68 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_225 a nyc:Course ;
+    nyc:arriveA nyc:zone_100 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 0.01 ;
+    nyc:montantTotal 23.06 .
+
+nyc:course_226 a nyc:Course ;
+    nyc:arriveA nyc:zone_50 ;
+    nyc:departDe nyc:zone_262 ;
+    nyc:distanceMiles 3.96 ;
+    nyc:montantTotal 31.03 .
+
+nyc:course_227 a nyc:Course ;
+    nyc:arriveA nyc:zone_107 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 1.17 ;
+    nyc:montantTotal 21.42 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_228 a nyc:Course ;
+    nyc:arriveA nyc:zone_263 ;
+    nyc:departDe nyc:zone_233 ;
+    nyc:distanceMiles 2.23 ;
+    nyc:montantTotal 24.9 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_229 a nyc:Course ;
+    nyc:arriveA nyc:zone_131 ;
+    nyc:departDe nyc:zone_138 ;
+    nyc:distanceMiles 8.67 ;
+    nyc:montantTotal 47.35 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_23 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 2.53 ;
+    nyc:montantTotal 27.19 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_230 a nyc:Course ;
+    nyc:arriveA nyc:zone_100 ;
+    nyc:departDe nyc:zone_170 ;
+    nyc:distanceMiles 0.7 ;
+    nyc:montantTotal 15.15 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_231 a nyc:Course ;
+    nyc:arriveA nyc:zone_166 ;
+    nyc:departDe nyc:zone_24 ;
+    nyc:distanceMiles 0.59 ;
+    nyc:montantTotal 10.3 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_232 a nyc:Course ;
+    nyc:arriveA nyc:zone_230 ;
+    nyc:departDe nyc:zone_246 ;
+    nyc:distanceMiles 0.9 ;
+    nyc:montantTotal 16.99 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_233 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 0.91 ;
+    nyc:montantTotal 18.18 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_234 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_166 ;
+    nyc:distanceMiles 2.83 ;
+    nyc:montantTotal 25.56 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_235 a nyc:Course ;
+    nyc:arriveA nyc:zone_43 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 1.38 ;
+    nyc:montantTotal 18.48 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_236 a nyc:Course ;
+    nyc:arriveA nyc:zone_33 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 8.3 ;
+    nyc:montantTotal 53.81 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_237 a nyc:Course ;
+    nyc:arriveA nyc:zone_246 ;
+    nyc:departDe nyc:zone_231 ;
+    nyc:distanceMiles 2.84 ;
+    nyc:montantTotal 22.35 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_238 a nyc:Course ;
+    nyc:arriveA nyc:zone_234 ;
+    nyc:departDe nyc:zone_261 ;
+    nyc:distanceMiles 2.08 ;
+    nyc:montantTotal 21.75 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_239 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_170 ;
+    nyc:distanceMiles 1.16 ;
+    nyc:montantTotal 15.81 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_24 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 2.23 ;
+    nyc:montantTotal 25.26 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_240 a nyc:Course ;
+    nyc:arriveA nyc:zone_75 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 18.95 ;
+    nyc:montantTotal 101.88 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_241 a nyc:Course ;
+    nyc:arriveA nyc:zone_144 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 3.2 ;
+    nyc:montantTotal 30.65 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_242 a nyc:Course ;
+    nyc:arriveA nyc:zone_226 ;
+    nyc:departDe nyc:zone_229 ;
+    nyc:distanceMiles 2.0 ;
+    nyc:montantTotal 19.38 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_243 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_68 ;
+    nyc:distanceMiles 4.43 ;
+    nyc:montantTotal 29.05 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_244 a nyc:Course ;
+    nyc:arriveA nyc:zone_107 ;
+    nyc:departDe nyc:zone_45 ;
+    nyc:distanceMiles 1.96 ;
+    nyc:montantTotal 21.42 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_245 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_107 ;
+    nyc:distanceMiles 3.66 ;
+    nyc:montantTotal 35.7 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_246 a nyc:Course ;
+    nyc:arriveA nyc:zone_107 ;
+    nyc:departDe nyc:zone_48 ;
+    nyc:distanceMiles 2.6 ;
+    nyc:montantTotal 23.2 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_247 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 1.2 ;
+    nyc:montantTotal 13.6 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_248 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 2.6 ;
+    nyc:montantTotal 24.39 .
+
+nyc:course_249 a nyc:Course ;
+    nyc:arriveA nyc:zone_114 ;
+    nyc:departDe nyc:zone_50 ;
+    nyc:distanceMiles 2.1 ;
+    nyc:montantTotal 26.29 .
+
+nyc:course_25 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 1.81 ;
+    nyc:montantTotal 18.48 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_250 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_68 ;
+    nyc:distanceMiles 1.96 ;
+    nyc:montantTotal 28.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_251 a nyc:Course ;
+    nyc:arriveA nyc:zone_246 ;
+    nyc:departDe nyc:zone_90 ;
+    nyc:distanceMiles 1.4 ;
+    nyc:montantTotal 17.7 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_252 a nyc:Course ;
+    nyc:arriveA nyc:zone_229 ;
+    nyc:departDe nyc:zone_140 ;
+    nyc:distanceMiles 1.5 ;
+    nyc:montantTotal 16.25 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_253 a nyc:Course ;
+    nyc:arriveA nyc:zone_48 ;
+    nyc:departDe nyc:zone_231 ;
+    nyc:distanceMiles 4.18 ;
+    nyc:montantTotal 33.63 .
+
+nyc:course_254 a nyc:Course ;
+    nyc:arriveA nyc:zone_170 ;
+    nyc:departDe nyc:zone_170 ;
+    nyc:distanceMiles 0.51 ;
+    nyc:montantTotal 9.85 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_255 a nyc:Course ;
+    nyc:arriveA nyc:zone_143 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 1.8 ;
+    nyc:montantTotal 19.75 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_256 a nyc:Course ;
+    nyc:arriveA nyc:zone_144 ;
+    nyc:departDe nyc:zone_107 ;
+    nyc:distanceMiles 1.41 ;
+    nyc:montantTotal 17.45 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_257 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_141 ;
+    nyc:distanceMiles 1.9 ;
+    nyc:montantTotal 22.3 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_258 a nyc:Course ;
+    nyc:arriveA nyc:zone_79 ;
+    nyc:departDe nyc:zone_138 ;
+    nyc:distanceMiles 9.59 ;
+    nyc:montantTotal 51.2 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_259 a nyc:Course ;
+    nyc:arriveA nyc:zone_74 ;
+    nyc:departDe nyc:zone_166 ;
+    nyc:distanceMiles 2.1 ;
+    nyc:montantTotal 19.0 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_26 a nyc:Course ;
+    nyc:arriveA nyc:zone_113 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 2.3 ;
+    nyc:montantTotal 19.45 .
+
+nyc:course_260 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_261 ;
+    nyc:distanceMiles 3.76 ;
+    nyc:montantTotal 28.75 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_261 a nyc:Course ;
+    nyc:arriveA nyc:zone_79 ;
+    nyc:departDe nyc:zone_66 ;
+    nyc:distanceMiles 3.54 ;
+    nyc:montantTotal 24.15 .
+
+nyc:course_262 a nyc:Course ;
+    nyc:arriveA nyc:zone_163 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 3.5 ;
+    nyc:montantTotal 31.5 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_263 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_48 ;
+    nyc:distanceMiles 1.1 ;
+    nyc:montantTotal 15.55 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_264 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 0.66 ;
+    nyc:montantTotal 10.5 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_265 a nyc:Course ;
+    nyc:arriveA nyc:zone_48 ;
+    nyc:departDe nyc:zone_113 ;
+    nyc:distanceMiles 1.54 ;
+    nyc:montantTotal 38.7 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_266 a nyc:Course ;
+    nyc:arriveA nyc:zone_43 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 1.22 ;
+    nyc:montantTotal 12.2 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_267 a nyc:Course ;
+    nyc:arriveA nyc:zone_143 ;
+    nyc:departDe nyc:zone_13 ;
+    nyc:distanceMiles 4.49 ;
+    nyc:montantTotal 29.14 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_268 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 0.66 ;
+    nyc:montantTotal 12.6 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_269 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 1.5 ;
+    nyc:montantTotal 21.95 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_27 a nyc:Course ;
+    nyc:arriveA nyc:zone_143 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 1.72 ;
+    nyc:montantTotal 21.06 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_270 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_143 ;
+    nyc:distanceMiles 1.2 ;
+    nyc:montantTotal 19.75 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_272 a nyc:Course ;
+    nyc:arriveA nyc:zone_234 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 1.53 ;
+    nyc:montantTotal 18.26 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_273 a nyc:Course ;
+    nyc:arriveA nyc:zone_141 ;
+    nyc:departDe nyc:zone_100 ;
+    nyc:distanceMiles 2.23 ;
+    nyc:montantTotal 25.68 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_274 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 0.52 ;
+    nyc:montantTotal 11.76 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_275 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 3.27 ;
+    nyc:montantTotal 27.55 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_276 a nyc:Course ;
+    nyc:arriveA nyc:zone_74 ;
+    nyc:departDe nyc:zone_116 ;
+    nyc:distanceMiles 2.02 ;
+    nyc:montantTotal 13.61 .
+
+nyc:course_277 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_138 ;
+    nyc:distanceMiles 8.88 ;
+    nyc:montantTotal 63.24 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_278 a nyc:Course ;
+    nyc:arriveA nyc:zone_145 ;
+    nyc:departDe nyc:zone_43 ;
+    nyc:distanceMiles 3.92 ;
+    nyc:montantTotal 32.34 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_279 a nyc:Course ;
+    nyc:arriveA nyc:zone_186 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 2.56 ;
+    nyc:montantTotal 29.46 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_28 a nyc:Course ;
+    nyc:arriveA nyc:zone_246 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 1.42 ;
+    nyc:montantTotal 1.0 .
+
+nyc:course_280 a nyc:Course ;
+    nyc:arriveA nyc:zone_175 ;
+    nyc:departDe nyc:zone_158 ;
+    nyc:distanceMiles 18.7 ;
+    nyc:montantTotal 53.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_281 a nyc:Course ;
+    nyc:arriveA nyc:zone_230 ;
+    nyc:departDe nyc:zone_87 ;
+    nyc:distanceMiles 5.1 ;
+    nyc:montantTotal 35.81 .
+
+nyc:course_282 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 1.14 ;
+    nyc:montantTotal 17.64 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_283 a nyc:Course ;
+    nyc:arriveA nyc:zone_164 ;
+    nyc:departDe nyc:zone_68 ;
+    nyc:distanceMiles 0.65 ;
+    nyc:montantTotal 15.54 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_284 a nyc:Course ;
+    nyc:arriveA nyc:zone_100 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 2.1 ;
+    nyc:montantTotal 29.95 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_285 a nyc:Course ;
+    nyc:arriveA nyc:zone_79 ;
+    nyc:departDe nyc:zone_87 ;
+    nyc:distanceMiles 3.0 ;
+    nyc:montantTotal 22.75 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_286 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_24 ;
+    nyc:distanceMiles 1.05 ;
+    nyc:montantTotal 11.9 ;
+    nyc:payeePar nyc:paiement_4 .
+
+nyc:course_287 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_90 ;
+    nyc:distanceMiles 1.39 ;
+    nyc:montantTotal 23.22 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_288 a nyc:Course ;
+    nyc:arriveA nyc:zone_164 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 2.11 ;
+    nyc:montantTotal 31.14 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_289 a nyc:Course ;
+    nyc:arriveA nyc:zone_148 ;
+    nyc:departDe nyc:zone_125 ;
+    nyc:distanceMiles 1.3 ;
+    nyc:montantTotal 15.92 .
+
+nyc:course_29 a nyc:Course ;
+    nyc:arriveA nyc:zone_75 ;
+    nyc:departDe nyc:zone_48 ;
+    nyc:distanceMiles 3.68 ;
+    nyc:montantTotal 35.34 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_290 a nyc:Course ;
+    nyc:arriveA nyc:zone_140 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 1.81 ;
+    nyc:montantTotal 23.05 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_291 a nyc:Course ;
+    nyc:arriveA nyc:zone_42 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 4.67 ;
+    nyc:montantTotal 31.08 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_292 a nyc:Course ;
+    nyc:arriveA nyc:zone_148 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 1.91 ;
+    nyc:montantTotal 22.35 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_294 a nyc:Course ;
+    nyc:arriveA nyc:zone_138 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 11.47 ;
+    nyc:montantTotal 83.27 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_295 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 0.32 ;
+    nyc:montantTotal 10.01 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_296 a nyc:Course ;
+    nyc:arriveA nyc:zone_256 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 5.46 ;
+    nyc:montantTotal 40.68 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_297 a nyc:Course ;
+    nyc:arriveA nyc:zone_90 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 2.05 ;
+    nyc:montantTotal 21.42 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_298 a nyc:Course ;
+    nyc:arriveA nyc:zone_79 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 0.99 ;
+    nyc:montantTotal 19.86 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_299 a nyc:Course ;
+    nyc:arriveA nyc:zone_141 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 1.9 ;
+    nyc:montantTotal 21.4 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_3 a nyc:Course ;
+    nyc:arriveA nyc:zone_256 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 18.35 ;
+    nyc:montantTotal 82.85 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_30 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 0.45 ;
+    nyc:montantTotal 13.6 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_31 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_140 ;
+    nyc:distanceMiles 0.6 ;
+    nyc:montantTotal 11.2 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_32 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_158 ;
+    nyc:distanceMiles 3.67 ;
+    nyc:montantTotal 31.62 .
+
+nyc:course_33 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 1.4 ;
+    nyc:montantTotal 19.4 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_34 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_229 ;
+    nyc:distanceMiles 0.98 ;
+    nyc:montantTotal 21.05 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_35 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 0.5 ;
+    nyc:montantTotal 11.82 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_36 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_138 ;
+    nyc:distanceMiles 7.8 ;
+    nyc:montantTotal 61.4 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_37 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_263 ;
+    nyc:distanceMiles 2.54 ;
+    nyc:montantTotal 27.36 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_38 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_125 ;
+    nyc:distanceMiles 4.26 ;
+    nyc:montantTotal 33.18 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_39 a nyc:Course ;
+    nyc:arriveA nyc:zone_68 ;
+    nyc:departDe nyc:zone_107 ;
+    nyc:distanceMiles 1.76 ;
+    nyc:montantTotal 22.26 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_4 a nyc:Course ;
+    nyc:arriveA nyc:zone_87 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 5.8 ;
+    nyc:montantTotal 37.25 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_40 a nyc:Course ;
+    nyc:arriveA nyc:zone_95 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 10.62 ;
+    nyc:montantTotal 64.04 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_41 a nyc:Course ;
+    nyc:arriveA nyc:zone_138 ;
+    nyc:departDe nyc:zone_261 ;
+    nyc:distanceMiles 13.91 ;
+    nyc:montantTotal 84.69 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_42 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 2.0 ;
+    nyc:montantTotal 20.2 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_43 a nyc:Course ;
+    nyc:arriveA nyc:zone_170 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 1.9 ;
+    nyc:montantTotal 15.32 .
+
+nyc:course_44 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 2.0 ;
+    nyc:montantTotal 9.3 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_45 a nyc:Course ;
+    nyc:arriveA nyc:zone_125 ;
+    nyc:departDe nyc:zone_256 ;
+    nyc:distanceMiles 3.0 ;
+    nyc:montantTotal 20.49 .
+
+nyc:course_46 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_262 ;
+    nyc:distanceMiles 1.7 ;
+    nyc:montantTotal 25.1 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_47 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_238 ;
+    nyc:distanceMiles 0.46 ;
+    nyc:montantTotal 13.92 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_48 a nyc:Course ;
+    nyc:arriveA nyc:zone_4 ;
+    nyc:departDe nyc:zone_68 ;
+    nyc:distanceMiles 1.9 ;
+    nyc:montantTotal 20.83 .
+
+nyc:course_49 a nyc:Course ;
+    nyc:arriveA nyc:zone_113 ;
+    nyc:departDe nyc:zone_79 ;
+    nyc:distanceMiles 0.31 ;
+    nyc:montantTotal 10.65 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_5 a nyc:Course ;
+    nyc:arriveA nyc:zone_164 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 0.8 ;
+    nyc:montantTotal 12.65 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_50 a nyc:Course ;
+    nyc:arriveA nyc:zone_11 ;
+    nyc:departDe nyc:zone_215 ;
+    nyc:distanceMiles 16.0 ;
+    nyc:montantTotal 51.0 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_51 a nyc:Course ;
+    nyc:arriveA nyc:zone_232 ;
+    nyc:departDe nyc:zone_211 ;
+    nyc:distanceMiles 1.3 ;
+    nyc:montantTotal 15.0 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_52 a nyc:Course ;
+    nyc:arriveA nyc:zone_43 ;
+    nyc:departDe nyc:zone_238 ;
+    nyc:distanceMiles 1.34 ;
+    nyc:montantTotal 18.96 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_53 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_141 ;
+    nyc:distanceMiles 2.5 ;
+    nyc:montantTotal 20.5 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_54 a nyc:Course ;
+    nyc:arriveA nyc:zone_114 ;
+    nyc:departDe nyc:zone_229 ;
+    nyc:distanceMiles 3.03 ;
+    nyc:montantTotal 24.78 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_55 a nyc:Course ;
+    nyc:arriveA nyc:zone_177 ;
+    nyc:departDe nyc:zone_61 ;
+    nyc:distanceMiles 0.9 ;
+    nyc:montantTotal 17.0 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_56 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_186 ;
+    nyc:distanceMiles 1.9 ;
+    nyc:montantTotal 22.8 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_57 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 0.44 ;
+    nyc:montantTotal 10.85 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_58 a nyc:Course ;
+    nyc:arriveA nyc:zone_211 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 1.38 ;
+    nyc:montantTotal 18.65 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_59 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 0.69 ;
+    nyc:montantTotal 12.74 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_6 a nyc:Course ;
+    nyc:arriveA nyc:zone_92 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 9.96 ;
+    nyc:montantTotal 56.71 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_60 a nyc:Course ;
+    nyc:arriveA nyc:zone_234 ;
+    nyc:departDe nyc:zone_249 ;
+    nyc:distanceMiles 1.03 ;
+    nyc:montantTotal 15.54 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_61 a nyc:Course ;
+    nyc:arriveA nyc:zone_182 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 22.04 ;
+    nyc:montantTotal 114.24 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_62 a nyc:Course ;
+    nyc:arriveA nyc:zone_148 ;
+    nyc:departDe nyc:zone_107 ;
+    nyc:distanceMiles 1.99 ;
+    nyc:montantTotal 27.69 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_63 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_263 ;
+    nyc:distanceMiles 1.3 ;
+    nyc:montantTotal 16.8 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_64 a nyc:Course ;
+    nyc:arriveA nyc:zone_91 ;
+    nyc:departDe nyc:zone_89 ;
+    nyc:distanceMiles 1.7 ;
+    nyc:montantTotal 10.82 .
+
+nyc:course_65 a nyc:Course ;
+    nyc:arriveA nyc:zone_261 ;
+    nyc:departDe nyc:zone_114 ;
+    nyc:distanceMiles 2.4 ;
+    nyc:montantTotal 28.65 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_66 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 0.9 ;
+    nyc:montantTotal 14.28 .
+
+nyc:course_67 a nyc:Course ;
+    nyc:arriveA nyc:zone_48 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 0.76 ;
+    nyc:montantTotal 22.75 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_68 a nyc:Course ;
+    nyc:arriveA nyc:zone_246 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 4.0 ;
+    nyc:montantTotal 31.95 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_69 a nyc:Course ;
+    nyc:arriveA nyc:zone_141 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 0.4 ;
+    nyc:montantTotal 11.2 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_7 a nyc:Course ;
+    nyc:arriveA nyc:zone_50 ;
+    nyc:departDe nyc:zone_148 ;
+    nyc:distanceMiles 3.86 ;
+    nyc:montantTotal 30.35 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_70 a nyc:Course ;
+    nyc:arriveA nyc:zone_161 ;
+    nyc:departDe nyc:zone_164 ;
+    nyc:distanceMiles 0.59 ;
+    nyc:montantTotal 14.06 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_71 a nyc:Course ;
+    nyc:arriveA nyc:zone_160 ;
+    nyc:departDe nyc:zone_82 ;
+    nyc:distanceMiles 1.29 ;
+    nyc:montantTotal 7.48 .
+
+nyc:course_72 a nyc:Course ;
+    nyc:arriveA nyc:zone_137 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 1.14 ;
+    nyc:montantTotal 15.54 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_74 a nyc:Course ;
+    nyc:arriveA nyc:zone_148 ;
+    nyc:departDe nyc:zone_79 ;
+    nyc:distanceMiles 1.07 ;
+    nyc:montantTotal 19.59 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_75 a nyc:Course ;
+    nyc:arriveA nyc:zone_166 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 2.58 ;
+    nyc:montantTotal 16.8 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_76 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_140 ;
+    nyc:distanceMiles 1.0 ;
+    nyc:montantTotal 16.5 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_77 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_113 ;
+    nyc:distanceMiles 0.71 ;
+    nyc:montantTotal 17.19 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_78 a nyc:Course ;
+    nyc:arriveA nyc:zone_142 ;
+    nyc:departDe nyc:zone_142 ;
+    nyc:distanceMiles 0.4 ;
+    nyc:montantTotal 9.1 ;
+    nyc:payeePar nyc:paiement_4 .
+
+nyc:course_79 a nyc:Course ;
+    nyc:arriveA nyc:zone_90 ;
+    nyc:departDe nyc:zone_231 ;
+    nyc:distanceMiles 1.74 ;
+    nyc:montantTotal 19.65 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_8 a nyc:Course ;
+    nyc:arriveA nyc:zone_33 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 21.13 ;
+    nyc:montantTotal 84.25 ;
+    nyc:payeePar nyc:paiement_2 .
+
+nyc:course_80 a nyc:Course ;
+    nyc:arriveA nyc:zone_107 ;
+    nyc:departDe nyc:zone_229 ;
+    nyc:distanceMiles 1.5 ;
+    nyc:montantTotal 18.26 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_81 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 0.94 ;
+    nyc:montantTotal 13.0 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_82 a nyc:Course ;
+    nyc:arriveA nyc:zone_237 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 0.9 ;
+    nyc:montantTotal 14.35 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_84 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 1.09 ;
+    nyc:montantTotal 11.5 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_85 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_233 ;
+    nyc:distanceMiles 0.38 ;
+    nyc:montantTotal 10.85 ;
+    nyc:payeePar nyc:paiement_3 .
+
+nyc:course_86 a nyc:Course ;
+    nyc:arriveA nyc:zone_74 ;
+    nyc:departDe nyc:zone_237 ;
+    nyc:distanceMiles 2.1 ;
+    nyc:montantTotal 19.65 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_87 a nyc:Course ;
+    nyc:arriveA nyc:zone_48 ;
+    nyc:departDe nyc:zone_239 ;
+    nyc:distanceMiles 1.85 ;
+    nyc:montantTotal 19.05 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_88 a nyc:Course ;
+    nyc:arriveA nyc:zone_249 ;
+    nyc:departDe nyc:zone_162 ;
+    nyc:distanceMiles 2.58 ;
+    nyc:montantTotal 30.63 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_89 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_141 ;
+    nyc:distanceMiles 1.1 ;
+    nyc:montantTotal 14.28 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_9 a nyc:Course ;
+    nyc:arriveA nyc:zone_238 ;
+    nyc:departDe nyc:zone_246 ;
+    nyc:distanceMiles 4.57 ;
+    nyc:montantTotal 6.4 .
+
+nyc:course_90 a nyc:Course ;
+    nyc:arriveA nyc:zone_162 ;
+    nyc:departDe nyc:zone_170 ;
+    nyc:distanceMiles 0.7 ;
+    nyc:montantTotal 14.94 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_91 a nyc:Course ;
+    nyc:arriveA nyc:zone_114 ;
+    nyc:departDe nyc:zone_246 ;
+    nyc:distanceMiles 2.45 ;
+    nyc:montantTotal 27.77 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_92 a nyc:Course ;
+    nyc:arriveA nyc:zone_236 ;
+    nyc:departDe nyc:zone_161 ;
+    nyc:distanceMiles 1.93 ;
+    nyc:montantTotal 22.05 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_93 a nyc:Course ;
+    nyc:arriveA nyc:zone_163 ;
+    nyc:departDe nyc:zone_238 ;
+    nyc:distanceMiles 2.57 ;
+    nyc:montantTotal 32.8 .
+
+nyc:course_94 a nyc:Course ;
+    nyc:arriveA nyc:zone_234 ;
+    nyc:departDe nyc:zone_234 ;
+    nyc:distanceMiles 1.9 ;
+    nyc:montantTotal 28.26 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_95 a nyc:Course ;
+    nyc:arriveA nyc:zone_132 ;
+    nyc:departDe nyc:zone_130 ;
+    nyc:distanceMiles 5.0 ;
+    nyc:montantTotal 32.37 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_96 a nyc:Course ;
+    nyc:arriveA nyc:zone_239 ;
+    nyc:departDe nyc:zone_143 ;
+    nyc:distanceMiles 0.85 ;
+    nyc:montantTotal 15.12 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_97 a nyc:Course ;
+    nyc:arriveA nyc:zone_100 ;
+    nyc:departDe nyc:zone_230 ;
+    nyc:distanceMiles 1.0 ;
+    nyc:montantTotal 16.95 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_98 a nyc:Course ;
+    nyc:arriveA nyc:zone_132 ;
+    nyc:departDe nyc:zone_132 ;
+    nyc:distanceMiles 0.24 ;
+    nyc:montantTotal 101.25 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:course_99 a nyc:Course ;
+    nyc:arriveA nyc:zone_74 ;
+    nyc:departDe nyc:zone_236 ;
+    nyc:distanceMiles 2.0 ;
+    nyc:montantTotal 17.1 ;
+    nyc:payeePar nyc:paiement_1 .
+
+nyc:departDe a owl:ObjectProperty ;
+    rdfs:label "part de"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range nyc:Zone .
+
+nyc:distanceMiles a owl:DatatypeProperty ;
+    rdfs:label "distance (miles)"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range xsd:decimal .
+
+nyc:idZone a owl:DatatypeProperty ;
+    rdfs:label "identifiant TLC de la zone"@fr ;
+    rdfs:domain nyc:Zone ;
+    rdfs:range xsd:integer .
+
+nyc:montantTotal a owl:DatatypeProperty ;
+    rdfs:label "montant total ($)"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range xsd:decimal .
+
+nyc:nom a owl:DatatypeProperty ;
+    rdfs:label "nom"@fr ;
+    rdfs:domain nyc:Zone ;
+    rdfs:range xsd:string .
+
+nyc:paiement_5 a nyc:ModeDePaiement ;
+    rdfs:label "Inconnu"@fr .
+
+nyc:paiement_6 a nyc:ModeDePaiement ;
+    rdfs:label "Course annulée"@fr .
+
+nyc:payeePar a owl:ObjectProperty ;
+    rdfs:label "est payée par"@fr ;
+    rdfs:domain nyc:Course ;
+    rdfs:range nyc:ModeDePaiement .
+
+nyc:situeeDans a owl:ObjectProperty ;
+    rdfs:label "est située dans"@fr ;
+    rdfs:domain nyc:Zone ;
+    rdfs:range nyc:Arrondissement .
+
+nyc:tarif_1 a nyc:TypeTarification ;
+    rdfs:label "Tarif standard"@fr .
+
+nyc:tarif_2 a nyc:TypeTarification ;
+    rdfs:label "JFK (Forfait)"@fr .
+
+nyc:tarif_3 a nyc:TypeTarification ;
+    rdfs:label "Newark (Surcharge)"@fr .
+
+nyc:tarif_4 a nyc:TypeTarification ;
+    rdfs:label "Nassau ou Westchester"@fr .
+
+nyc:tarif_5 a nyc:TypeTarification ;
+    rdfs:label "Tarif négocié"@fr .
+
+nyc:tarif_6 a nyc:TypeTarification ;
+    rdfs:label "Trajet groupé"@fr .
+
+nyc:zone_1 a nyc:ZoneAeroport ;
+    nyc:aPourServiceZone nyc:sz_EWR ;
+    nyc:idZone 1 ;
+    nyc:nom "Newark Airport" ;
+    nyc:situeeDans nyc:arr_EWR .
+
+nyc:zone_10 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 10 ;
+    nyc:nom "Baisley Park" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_101 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 101 ;
+    nyc:nom "Glen Oaks" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_102 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 102 ;
+    nyc:nom "Glendale" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_103 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 103 ;
+    nyc:nom "Governor's Island/Ellis Island/Liberty Island" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_104 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 104 ;
+    nyc:nom "Governor's Island/Ellis Island/Liberty Island" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_105 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 105 ;
+    nyc:nom "Governor's Island/Ellis Island/Liberty Island" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_106 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 106 ;
+    nyc:nom "Gowanus" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_108 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 108 ;
+    nyc:nom "Gravesend" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_109 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 109 ;
+    nyc:nom "Great Kills" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_110 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 110 ;
+    nyc:nom "Great Kills Park" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_111 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 111 ;
+    nyc:nom "Green-Wood Cemetery" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_112 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 112 ;
+    nyc:nom "Greenpoint" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_115 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 115 ;
+    nyc:nom "Grymes Hill/Clifton" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_117 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 117 ;
+    nyc:nom "Hammels/Arverne" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_118 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 118 ;
+    nyc:nom "Heartland Village/Todt Hill" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_119 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 119 ;
+    nyc:nom "Highbridge" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_12 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 12 ;
+    nyc:nom "Battery Park" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_120 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 120 ;
+    nyc:nom "Highbridge Park" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_121 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 121 ;
+    nyc:nom "Hillcrest/Pomonok" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_122 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 122 ;
+    nyc:nom "Hollis" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_123 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 123 ;
+    nyc:nom "Homecrest" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_124 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 124 ;
+    nyc:nom "Howard Beach" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_126 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 126 ;
+    nyc:nom "Hunts Point" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_127 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 127 ;
+    nyc:nom "Inwood" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_128 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 128 ;
+    nyc:nom "Inwood Hill Park" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_129 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 129 ;
+    nyc:nom "Jackson Heights" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_133 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 133 ;
+    nyc:nom "Kensington" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_134 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 134 ;
+    nyc:nom "Kew Gardens" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_135 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 135 ;
+    nyc:nom "Kew Gardens Hills" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_136 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 136 ;
+    nyc:nom "Kingsbridge Heights" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_139 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 139 ;
+    nyc:nom "Laurelton" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_14 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 14 ;
+    nyc:nom "Bay Ridge" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_146 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 146 ;
+    nyc:nom "Long Island City/Queens Plaza" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_147 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 147 ;
+    nyc:nom "Longwood" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_149 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 149 ;
+    nyc:nom "Madison" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_15 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 15 ;
+    nyc:nom "Bay Terrace/Fort Totten" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_150 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 150 ;
+    nyc:nom "Manhattan Beach" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_154 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 154 ;
+    nyc:nom "Marine Park/Floyd Bennett Field" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_155 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 155 ;
+    nyc:nom "Marine Park/Mill Basin" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_156 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 156 ;
+    nyc:nom "Mariners Harbor" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_159 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 159 ;
+    nyc:nom "Melrose South" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_16 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 16 ;
+    nyc:nom "Bayside" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_165 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 165 ;
+    nyc:nom "Midwood" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_167 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 167 ;
+    nyc:nom "Morrisania/Melrose" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_169 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 169 ;
+    nyc:nom "Mount Hope" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_17 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 17 ;
+    nyc:nom "Bedford" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_171 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 171 ;
+    nyc:nom "Murray Hill-Queens" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_172 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 172 ;
+    nyc:nom "New Dorp/Midland Beach" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_173 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 173 ;
+    nyc:nom "North Corona" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_174 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 174 ;
+    nyc:nom "Norwood" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_176 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 176 ;
+    nyc:nom "Oakwood" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_178 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 178 ;
+    nyc:nom "Ocean Parkway South" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_179 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 179 ;
+    nyc:nom "Old Astoria" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_18 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 18 ;
+    nyc:nom "Bedford Park" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_180 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 180 ;
+    nyc:nom "Ozone Park" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_181 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 181 ;
+    nyc:nom "Park Slope" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_183 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 183 ;
+    nyc:nom "Pelham Bay" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_184 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 184 ;
+    nyc:nom "Pelham Bay Park" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_185 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 185 ;
+    nyc:nom "Pelham Parkway" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_187 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 187 ;
+    nyc:nom "Port Richmond" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_188 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 188 ;
+    nyc:nom "Prospect-Lefferts Gardens" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_189 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 189 ;
+    nyc:nom "Prospect Heights" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_19 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 19 ;
+    nyc:nom "Bellerose" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_190 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 190 ;
+    nyc:nom "Prospect Park" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_191 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 191 ;
+    nyc:nom "Queens Village" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_192 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 192 ;
+    nyc:nom "Queensboro Hill" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_193 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 193 ;
+    nyc:nom "Queensbridge/Ravenswood" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_194 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 194 ;
+    nyc:nom "Randalls Island" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_195 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 195 ;
+    nyc:nom "Red Hook" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_196 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 196 ;
+    nyc:nom "Rego Park" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_197 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 197 ;
+    nyc:nom "Richmond Hill" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_198 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 198 ;
+    nyc:nom "Ridgewood" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_199 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 199 ;
+    nyc:nom "Rikers Island" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_2 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 2 ;
+    nyc:nom "Jamaica Bay" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_20 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 20 ;
+    nyc:nom "Belmont" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_201 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 201 ;
+    nyc:nom "Rockaway Park" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_202 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 202 ;
+    nyc:nom "Roosevelt Island" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_203 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 203 ;
+    nyc:nom "Rosedale" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_204 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 204 ;
+    nyc:nom "Rossville/Woodrow" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_205 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 205 ;
+    nyc:nom "Saint Albans" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_206 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 206 ;
+    nyc:nom "Saint George/New Brighton" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_207 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 207 ;
+    nyc:nom "Saint Michaels Cemetery/Woodside" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_208 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 208 ;
+    nyc:nom "Schuylerville/Edgewater Park" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_21 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 21 ;
+    nyc:nom "Bensonhurst East" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_210 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 210 ;
+    nyc:nom "Sheepshead Bay" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_212 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 212 ;
+    nyc:nom "Soundview/Bruckner" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_214 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 214 ;
+    nyc:nom "South Beach/Dongan Hills" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_216 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 216 ;
+    nyc:nom "South Ozone Park" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_217 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 217 ;
+    nyc:nom "South Williamsburg" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_218 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 218 ;
+    nyc:nom "Springfield Gardens North" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_219 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 219 ;
+    nyc:nom "Springfield Gardens South" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_22 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 22 ;
+    nyc:nom "Bensonhurst West" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_220 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 220 ;
+    nyc:nom "Spuyten Duyvil/Kingsbridge" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_221 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 221 ;
+    nyc:nom "Stapleton" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_222 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 222 ;
+    nyc:nom "Starrett City" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_224 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 224 ;
+    nyc:nom "Stuy Town/Peter Cooper Village" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_225 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 225 ;
+    nyc:nom "Stuyvesant Heights" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_227 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 227 ;
+    nyc:nom "Sunset Park East" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_228 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 228 ;
+    nyc:nom "Sunset Park West" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_23 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 23 ;
+    nyc:nom "Bloomfield/Emerson Hill" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_235 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 235 ;
+    nyc:nom "University Heights/Morris Heights" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_240 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 240 ;
+    nyc:nom "Van Cortlandt Park" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_241 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 241 ;
+    nyc:nom "Van Cortlandt Village" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_242 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 242 ;
+    nyc:nom "Van Nest/Morris Park" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_243 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 243 ;
+    nyc:nom "Washington Heights North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_244 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 244 ;
+    nyc:nom "Washington Heights South" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_245 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 245 ;
+    nyc:nom "West Brighton" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_247 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 247 ;
+    nyc:nom "West Concourse" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_248 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 248 ;
+    nyc:nom "West Farms/Bronx River" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_25 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 25 ;
+    nyc:nom "Boerum Hill" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_250 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 250 ;
+    nyc:nom "Westchester Village/Unionport" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_251 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 251 ;
+    nyc:nom "Westerleigh" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_252 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 252 ;
+    nyc:nom "Whitestone" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_253 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 253 ;
+    nyc:nom "Willets Point" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_254 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 254 ;
+    nyc:nom "Williamsbridge/Olinville" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_255 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 255 ;
+    nyc:nom "Williamsburg (North Side)" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_257 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 257 ;
+    nyc:nom "Windsor Terrace" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_259 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 259 ;
+    nyc:nom "Woodlawn/Wakefield" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_26 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 26 ;
+    nyc:nom "Borough Park" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_260 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 260 ;
+    nyc:nom "Woodside" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_27 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 27 ;
+    nyc:nom "Breezy Point/Fort Tilden/Riis Beach" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_28 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 28 ;
+    nyc:nom "Briarwood/Jamaica Hills" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_29 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 29 ;
+    nyc:nom "Brighton Beach" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_3 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 3 ;
+    nyc:nom "Allerton/Pelham Gardens" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_30 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 30 ;
+    nyc:nom "Broad Channel" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_31 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 31 ;
+    nyc:nom "Bronx Park" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_32 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 32 ;
+    nyc:nom "Bronxdale" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_34 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 34 ;
+    nyc:nom "Brooklyn Navy Yard" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_35 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 35 ;
+    nyc:nom "Brownsville" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_36 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 36 ;
+    nyc:nom "Bushwick North" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_37 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 37 ;
+    nyc:nom "Bushwick South" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_38 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 38 ;
+    nyc:nom "Cambria Heights" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_39 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 39 ;
+    nyc:nom "Canarsie" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_40 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 40 ;
+    nyc:nom "Carroll Gardens" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_44 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 44 ;
+    nyc:nom "Charleston/Tottenville" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_46 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 46 ;
+    nyc:nom "City Island" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_47 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 47 ;
+    nyc:nom "Claremont/Bathgate" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_5 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 5 ;
+    nyc:nom "Arden Heights" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_51 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 51 ;
+    nyc:nom "Co-Op City" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_52 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 52 ;
+    nyc:nom "Cobble Hill" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_53 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 53 ;
+    nyc:nom "College Point" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_54 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 54 ;
+    nyc:nom "Columbia Street" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_55 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 55 ;
+    nyc:nom "Coney Island" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_56 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 56 ;
+    nyc:nom "Corona" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_57 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 57 ;
+    nyc:nom "Corona" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_58 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 58 ;
+    nyc:nom "Country Club" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_59 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 59 ;
+    nyc:nom "Crotona Park" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_6 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 6 ;
+    nyc:nom "Arrochar/Fort Wadsworth" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_60 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 60 ;
+    nyc:nom "Crotona Park East" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_62 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 62 ;
+    nyc:nom "Crown Heights South" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_63 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 63 ;
+    nyc:nom "Cypress Hills" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_64 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 64 ;
+    nyc:nom "Douglaston" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_65 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 65 ;
+    nyc:nom "Downtown Brooklyn/MetroTech" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_67 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 67 ;
+    nyc:nom "Dyker Heights" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_69 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 69 ;
+    nyc:nom "East Concourse/Concourse Village" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_72 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 72 ;
+    nyc:nom "East Flatbush/Remsen Village" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_73 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 73 ;
+    nyc:nom "East Flushing" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_76 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 76 ;
+    nyc:nom "East New York" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_77 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 77 ;
+    nyc:nom "East New York/Pennsylvania Avenue" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_78 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 78 ;
+    nyc:nom "East Tremont" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_8 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 8 ;
+    nyc:nom "Astoria Park" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_81 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 81 ;
+    nyc:nom "Eastchester" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_83 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 83 ;
+    nyc:nom "Elmhurst/Maspeth" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_84 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 84 ;
+    nyc:nom "Eltingville/Annadale/Prince's Bay" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:zone_85 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 85 ;
+    nyc:nom "Erasmus" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_86 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 86 ;
+    nyc:nom "Far Rockaway" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_9 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 9 ;
+    nyc:nom "Auburndale" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_93 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 93 ;
+    nyc:nom "Flushing Meadows-Corona Park" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_94 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 94 ;
+    nyc:nom "Fordham South" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_96 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 96 ;
+    nyc:nom "Forest Park/Highland Park" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_97 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 97 ;
+    nyc:nom "Fort Greene" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_98 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 98 ;
+    nyc:nom "Fresh Meadows" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_99 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 99 ;
+    nyc:nom "Freshkills Park" ;
+    nyc:situeeDans nyc:arr_Staten_Island .
+
+nyc:PaiementElectronique a nyc:CategoriePaiement ;
+    rdfs:label "Électronique (Carte, etc.)"@fr .
+
+nyc:PaiementPhysique a nyc:CategoriePaiement ;
+    rdfs:label "Physique (Espèces)"@fr .
+
+nyc:arr_EWR a nyc:Arrondissement ;
+    rdfs:label "EWR" .
+
+nyc:paiement_3 a nyc:ModeDePaiement ;
+    rdfs:label "Gratuit"@fr .
+
+nyc:zone_11 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 11 ;
+    nyc:nom "Bath Beach" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_130 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 130 ;
+    nyc:nom "Jamaica" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_131 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 131 ;
+    nyc:nom "Jamaica Estates" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_145 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 145 ;
+    nyc:nom "Long Island City/Hunters Point" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_152 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 152 ;
+    nyc:nom "Manhattanville" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_153 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 153 ;
+    nyc:nom "Marble Hill" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_157 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 157 ;
+    nyc:nom "Maspeth" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_160 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 160 ;
+    nyc:nom "Middle Village" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_168 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 168 ;
+    nyc:nom "Mott Haven/Port Morris" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_175 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 175 ;
+    nyc:nom "Oakland Gardens" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_200 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 200 ;
+    nyc:nom "Riverdale/North Riverdale/Fieldston" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_209 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 209 ;
+    nyc:nom "Seaport" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_213 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 213 ;
+    nyc:nom "Soundview/Castle Hill" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_215 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 215 ;
+    nyc:nom "South Jamaica" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_223 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 223 ;
+    nyc:nom "Steinway" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_226 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 226 ;
+    nyc:nom "Sunnyside" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_41 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 41 ;
+    nyc:nom "Central Harlem" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_45 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 45 ;
+    nyc:nom "Chinatown" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_49 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 49 ;
+    nyc:nom "Clinton Hill" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_61 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 61 ;
+    nyc:nom "Crown Heights North" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_66 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 66 ;
+    nyc:nom "DUMBO/Vinegar Hill" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_7 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 7 ;
+    nyc:nom "Astoria" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_70 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 70 ;
+    nyc:nom "East Elmhurst" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_71 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 71 ;
+    nyc:nom "East Flatbush/Farragut" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_80 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 80 ;
+    nyc:nom "East Williamsburg" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_82 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 82 ;
+    nyc:nom "Elmhurst" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_88 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 88 ;
+    nyc:nom "Financial District South" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_89 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 89 ;
+    nyc:nom "Flatbush/Ditmas Park" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_91 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 91 ;
+    nyc:nom "Flatlands" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_92 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 92 ;
+    nyc:nom "Flushing" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:sz_Airports a nyc:ZoneDeService ;
+    rdfs:label "Airports" .
+
+nyc:zone_116 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 116 ;
+    nyc:nom "Hamilton Heights" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_13 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 13 ;
+    nyc:nom "Battery Park City" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_177 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 177 ;
+    nyc:nom "Ocean Hill" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_182 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 182 ;
+    nyc:nom "Parkchester" ;
+    nyc:situeeDans nyc:arr_Bronx .
+
+nyc:zone_232 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 232 ;
+    nyc:nom "Two Bridges/Seward Park" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_258 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 258 ;
+    nyc:nom "Woodhaven" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_4 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 4 ;
+    nyc:nom "Alphabet City" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_42 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 42 ;
+    nyc:nom "Central Harlem North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_95 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 95 ;
+    nyc:nom "Forest Hills" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:CategoriePaiement a owl:Class ;
+    rdfs:label "Catégorie de paiement"@fr .
+
+nyc:ZoneAeroport a owl:Class ;
+    rdfs:label "zone d'aéroport"@fr ;
+    rdfs:subClassOf nyc:Zone .
+
+nyc:paiement_4 a nyc:ModeDePaiement ;
+    rdfs:label "Litige"@fr .
+
+nyc:zone_211 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 211 ;
+    nyc:nom "SoHo" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_24 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 24 ;
+    nyc:nom "Bloomingdale" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_33 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 33 ;
+    nyc:nom "Brooklyn Heights" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_125 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 125 ;
+    nyc:nom "Hudson Sq" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_137 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 137 ;
+    nyc:nom "Kips Bay" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_256 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 256 ;
+    nyc:nom "Williamsburg (South Side)" ;
+    nyc:situeeDans nyc:arr_Brooklyn .
+
+nyc:zone_151 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 151 ;
+    nyc:nom "Manhattan Valley" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_233 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 233 ;
+    nyc:nom "UN/Turtle Bay South" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_261 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 261 ;
+    nyc:nom "World Trade Center" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_50 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 50 ;
+    nyc:nom "Clinton West" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_113 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 113 ;
+    nyc:nom "Greenwich Village North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_144 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 144 ;
+    nyc:nom "Little Italy/NoLiTa" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_158 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 158 ;
+    nyc:nom "Meatpacking/West Village West" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_164 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 164 ;
+    nyc:nom "Midtown South" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_166 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 166 ;
+    nyc:nom "Morningside Heights" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_262 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 262 ;
+    nyc:nom "Yorkville East" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_87 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 87 ;
+    nyc:nom "Financial District North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:Arrondissement a owl:Class ;
+    rdfs:label "arrondissement"@fr .
+
+nyc:TypeTarification a owl:Class ;
+    rdfs:label "Type de tarification"@fr .
+
+nyc:ZoneDeService a owl:Class ;
+    rdfs:label "Zone de service"@fr .
+
+nyc:zone_100 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 100 ;
+    nyc:nom "Garment District" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_148 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 148 ;
+    nyc:nom "Lower East Side" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_231 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 231 ;
+    nyc:nom "TriBeCa/Civic Center" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_263 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 263 ;
+    nyc:nom "Yorkville West" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_43 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 43 ;
+    nyc:nom "Central Park" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_74 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 74 ;
+    nyc:nom "East Harlem North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_75 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Boro_Zone ;
+    nyc:idZone 75 ;
+    nyc:nom "East Harlem South" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:ModeDePaiement a owl:Class ;
+    rdfs:label "mode de paiement"@fr .
+
+nyc:zone_143 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 143 ;
+    nyc:nom "Lincoln Square West" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_163 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 163 ;
+    nyc:nom "Midtown North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_138 a nyc:ZoneAeroport ;
+    nyc:aPourServiceZone nyc:sz_Airports ;
+    nyc:idZone 138 ;
+    nyc:nom "LaGuardia Airport" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_68 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 68 ;
+    nyc:nom "East Chelsea" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_90 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 90 ;
+    nyc:nom "Flatiron" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_246 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 246 ;
+    nyc:nom "West Chelsea/Hudson Yards" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_141 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 141 ;
+    nyc:nom "Lenox Hill West" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_234 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 234 ;
+    nyc:nom "Union Sq" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_107 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 107 ;
+    nyc:nom "Gramercy" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_140 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 140 ;
+    nyc:nom "Lenox Hill East" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_170 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 170 ;
+    nyc:nom "Murray Hill" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_48 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 48 ;
+    nyc:nom "Clinton East" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_186 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 186 ;
+    nyc:nom "Penn Station/Madison Sq West" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_229 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 229 ;
+    nyc:nom "Sutton Place/Turtle Bay North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_114 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 114 ;
+    nyc:nom "Greenwich Village South" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_79 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 79 ;
+    nyc:nom "East Village" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_238 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 238 ;
+    nyc:nom "Upper West Side North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_239 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 239 ;
+    nyc:nom "Upper West Side South" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_249 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 249 ;
+    nyc:nom "West Village" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:arr_Staten_Island a nyc:Arrondissement ;
+    rdfs:label "Staten Island" ;
+    owl:sameAs wd:Q18432 .
+
+nyc:zone_132 a nyc:ZoneAeroport ;
+    nyc:aPourServiceZone nyc:sz_Airports ;
+    nyc:idZone 132 ;
+    nyc:nom "JFK Airport" ;
+    nyc:situeeDans nyc:arr_Queens .
+
+nyc:zone_230 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 230 ;
+    nyc:nom "Times Sq/Theatre District" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_162 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 162 ;
+    nyc:nom "Midtown East" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_142 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 142 ;
+    nyc:nom "Lincoln Square East" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_236 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 236 ;
+    nyc:nom "Upper East Side North" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_161 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 161 ;
+    nyc:nom "Midtown Center" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:zone_237 a nyc:Zone ;
+    nyc:aPourServiceZone nyc:sz_Yellow_Zone ;
+    nyc:idZone 237 ;
+    nyc:nom "Upper East Side South" ;
+    nyc:situeeDans nyc:arr_Manhattan .
+
+nyc:paiement_2 a nyc:ModeDePaiement ;
+    rdfs:label "Espèces"@fr ;
+    nyc:appartientCategorie nyc:PaiementPhysique .
+
+nyc:arr_Bronx a nyc:Arrondissement ;
+    rdfs:label "Bronx" ;
+    owl:sameAs wd:Q18426 .
+
+nyc:sz_Yellow_Zone a nyc:ZoneDeService ;
+    rdfs:label "Yellow Zone" .
+
+nyc:arr_Brooklyn a nyc:Arrondissement ;
+    rdfs:label "Brooklyn" ;
+    owl:sameAs wd:Q18419 .
+
+nyc:arr_Manhattan a nyc:Arrondissement ;
+    rdfs:label "Manhattan" ;
+    owl:sameAs wd:Q11299 .
+
+nyc:arr_Queens a nyc:Arrondissement ;
+    rdfs:label "Queens" ;
+    owl:sameAs wd:Q18424 .
+
+nyc:sz_Boro_Zone a nyc:ZoneDeService ;
+    rdfs:label "Boro Zone" .
+
+nyc:paiement_1 a nyc:ModeDePaiement ;
+    rdfs:label "Carte bancaire"@fr ;
+    nyc:appartientCategorie nyc:PaiementElectronique .
+
+nyc:Zone a owl:Class ;
+    rdfs:label "zone de taxi"@fr .
+
+nyc:Course a owl:Class ;
+    rdfs:label "course de taxi"@fr .
+
